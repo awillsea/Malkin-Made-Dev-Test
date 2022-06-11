@@ -1,0 +1,469 @@
+
+/*<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+*/
+html{
+    height: 3689px;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #4F5965;
+    color: whitesmoke;
+    height: 100%;
+    
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+    padding-left: 5% ;
+    background-color: #4F5965;
+    margin-bottom: 0%;
+    
+    
+}
+.logo{
+    display: inline-flex;
+}
+.logo h2{
+    font-size: 40px;
+    color:white;
+}
+.logo img{
+    height: 75%;
+}
+.navigation-list{
+    list-style: none;
+    overflow: hidden;
+    margin-right: 10px;
+    padding-left: 0px;
+    
+    
+    
+}
+.navigation-list li{
+    display: inline-block;
+    padding: 0px 40px;
+    justify-content: start;
+
+    
+    
+}
+.CTA1Button{
+    background-color: #7EC6D3;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 12px;
+    margin: 4px 2px;
+    border-radius: 8px;
+    display: inline;
+    font-stretch:extra-expanded;
+    height: 50px;
+    width: 225px;
+}
+
+Button{
+    background-color: #7EC6D3;
+    border: none;
+    color: white;
+    padding: 10px 3%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    border-radius: 8px;
+}
+.RightButton{
+    background-color:white;
+    color: #7EC6D3;
+    padding: 10px 3%;
+    border:2px solid;
+    margin-left: 50px;
+}
+.RightButton, .LeftButton{
+    margin-top: 30px;
+}
+.hero{
+    width: 100%;
+    min-height: 700px;
+    display: block;
+    background-image:url("hero-img.jpg");
+    background-position: center;
+    background-size: 90%;
+
+}
+.text{
+    display: block;
+    padding-top: 10%;
+    width: 50%;
+    padding-left: 200px;
+
+}
+.text button{
+    width: 150px;
+}
+.text h1{
+    font-size: 45px;
+}
+.text p{
+    display: flex;
+    flex-wrap: wrap;
+    width:50%;
+    justify-content: flex-start;
+}
+.Three-colum-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    background-color:white;
+    color: #24252a;
+    text-align: center;
+
+}
+.Three-colum-section img{
+    border-radius: 50%;
+    
+}
+.colum-header{
+    grid-column: 1 / 4;
+}
+.FirstThirdColum, .SecondThirdColum,.FinalThirdColum{
+    grid-row: 2 / 5;
+    
+
+}
+/* the text above was the first way of giving this section a go. the following lines are how i ended up doing it. */
+
+/*.Three-colum-section{
+    min-height:  400px;
+    background-color: white;
+    color: black;
+}
+.Three-colum-section h2{
+   text-align: center;
+    margin-bottom: 20px;
+}
+.Colum-Section{
+    columns: 3;
+    text-align: center;
+    
+}
+.Colum-Section h3{
+    margin-bottom: 10px;
+    text-align: center;
+}   
+.Colum-Section button{
+    margin-top: 25px;
+    
+}*/
+
+
+/*
+.Two-colum-section{
+    display: inline-flex;
+    width: 100%;
+    min-height: 15%;
+    background-color: #EBEBEB;
+    color:#24252a;
+    
+}
+.ImgHalf{
+    width: 50%;
+    min-height:auto;
+    background-color:#EBEBEB;
+    
+}
+.ImgHalf img{
+    width: 50%;
+    margin-left: 250px;
+    margin-top: 150px;
+}
+.TextHalf{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 100px;
+    margin-top: 150px;
+}
+.TextHalf h3{
+    font-style: bold;
+    opacity: 50%;
+    font-size: 200%;
+    margin-bottom: 0;
+}
+.TextHalf button{
+    margin-top: 15px;
+    width: 25%;
+}
+*/
+/* added a grid from previous css */
+.Two-colum-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #EBEBEB;
+    color:#24252a;
+    
+}
+.ImgHalf{
+   
+    min-height:auto;
+    background-color:#EBEBEB;
+    
+}
+.ImgHalf img{
+    height:min-content;
+    width: min-content;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.TextHalf{
+    display: flex;
+    flex-direction: column;
+    
+    margin-right: 100px;
+    margin-top: 150px;
+}
+.TextHalf h3{
+    font-style: bold;
+    opacity: 50%;
+    font-size: 200%;
+    margin-bottom: 0;
+}
+.TextHalf button{
+    margin-top: 15px;
+    width: 25%;
+}
+
+.One-colum-section{
+    display: inline-block;
+    justify-content: center;
+    align-self: center;
+    min-height: 25%;
+    background-color: white;
+    color: #24252a;
+    
+}
+.Block-W-CTA{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.One-colum-section, h2{
+    text-align: center;
+    
+}
+.video{
+    background-image: url("image--video-thumb.jpg");
+    min-height: 425px;
+    min-width: 75%;
+    background-position: center;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    
+}
+.One-colum-section p{
+    display: inline-flex;
+    justify-content:flex-start;
+    align-items: center;
+    text-align: center;
+    
+    width: 75%;
+    padding-top: 20px;
+
+}
+.dropdown{  
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+    background-color:#EBEBEB;
+    min-height: 450px;
+}
+.question-answer-faq > .answer{
+    display:none;
+}
+.active > .answer {
+    display: block;
+    padding-bottom: 1.3rem;
+    color: black;
+  }
+.title-faq{
+    font-size: 2.0rem;
+    color: black;
+    opacity: 50%;
+}
+.faq-wrapper{
+display: flex;
+flex-direction: column;
+
+}
+.faq-dropdown-questions{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.question-answer-faq > div{
+    width: 800px;
+    min-height:;
+    
+    
+}
+.question-title{
+    font-size: 175%;
+    margin: 1.4rem 0rem;
+    color:#7EC6D3;
+    opacity: 0.9;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.question i{
+    align-self:center;
+}
+.arrow-down {
+    border: solid #7EC6D3;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    align-items: flex-start;
+    text-align: left;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    
+  }
+  
+  .active .arrow-down{
+      transform: rotate(225deg);
+  }
+/*
+below was my old footer, i decided to add a grid to make my life easier. but im not sure if i should delete this or leave it so you can see some of my thought process
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 5%;
+}
+.About{
+    display: flex;
+    flex-direction:reverse;
+}
+.About-nav{
+    list-style: none;
+    
+}.About-nav li{
+    padding: 10px;
+}
+.Contacts{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    width: 250px;
+    
+}
+.Socials{
+
+}
+.Uptodate{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    
+}
+.Uptodate h3{
+    font-style: bold;
+}
+
+#Submit{
+    margin: 0px 50px;
+    
+}
+input{
+    background-color:#4F5965 ;
+    color: #7EC6D3;
+    border-color: #7EC6D3;
+    border-radius: 10%;
+    padding-left:10px;
+
+}*/
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    text-align: start;
+    padding-top: 30px;
+
+
+}
+footer h2{
+    text-align: start;
+}
+.About h2{
+padding-left: 50px;    
+
+}
+.About-nav{
+    list-style: none;
+
+}
+.About-nav li{
+    padding: 10px;
+}
+.Contacts{
+    display: grid;
+    grid-template-rows: auto;
+    max-width: 50%;
+}
+.social-imgs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.social-imgs > div{
+    padding:10px;
+    
+}
+.social-imgs > div > img{
+    border-radius:40%;
+}
+.Socials h2{
+padding-left:11px;
+}
+.Uptodate{
+    display:flex;
+    flex-direction:column;
+    
+    
+}
+
+.Uptodate h2{
+    font-style: bold;
+
+}
+label{
+    padding-bottom: 3%;
+}
+
+#Submit{
+   margin-right: 50%;
+   margin-top: 3%;
+    
+}
+input{
+    background-color:#4F5965 ;
+    color: #7EC6D3;
+    border-color: #7EC6D3;
+    border-radius: 10%;
+    margin-right: 25%;
+    padding:10px;
+    
+
+}
+
